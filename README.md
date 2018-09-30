@@ -30,7 +30,7 @@ Using the **oc** CLI tool a demonstration can be made with the following command
 
 As a result a BuildConfig of type JenkinsPipeline is created:
 
-    --> Deploying template "openshift/java-application-template" to project dev
+    --> Deploying template "openshift/java-app-template" to project dev
 
      * With parameters:
         * Application Name=greeter-service
