@@ -1,4 +1,4 @@
-# openshift-java-template
+# openshift-java-app-template
 
 The template creates a pipeline to deploy a Java application.
 
@@ -12,7 +12,7 @@ The main goal is to show that a template can create a pipeline which in turn cre
 
 The template can be created in any project with the following commands:
 
-    oc create -f java-application-template.yaml -n openshift
+    oc create -f java-app-template.yaml -n openshift
 
 With the command above the template is created in the project **openshift**.
 
@@ -26,7 +26,7 @@ A form is presented to be completed with information about the application like 
 
 Using the **oc** CLI tool a demonstration can be made with the following commands:
 
-    oc new-app --template=java-application-template -p PARAM_APP_NAME=greeter-service -p PARAM_GIT_REPO=https://github.com/leandroberetta/greeter-service
+    oc new-app --template=java-app-template -p PARAM_APP_NAME=greeter-service -p PARAM_GIT_REPO=https://github.com/leandroberetta/greeter-service
 
 As a result a BuildConfig of type JenkinsPipeline is created:
 
