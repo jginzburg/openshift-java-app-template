@@ -107,7 +107,7 @@ objects:
                                         rc.untilEach(1) {
                                             def rcMap = it.object()
 
-                                            return (rcMap.status.replicas.equals(rcMap.status.readyReplicas))                                    }
+                                            return (rcMap.status.replicas.equals(rcMap.status.readyReplicas))                                   
                                         }
                                     }
                                 }
