@@ -46,7 +46,7 @@ objects:
                     }
                     stage("Checkout") {
                         steps {
-                            git(env.GIT_REPO, env.GIT_BRANCH)
+                            git(url: env.GIT_REPO, branch: env.GIT_BRANCH)
                         }
                     }
                     stage("Compile") {
